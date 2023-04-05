@@ -1,13 +1,213 @@
+:root {
+  /* Stripe Dashboard color palette */
+  
+    /* gray */
+    --gray-50: #f6f8fa;
+    --gray-100: #ebeef1;
+    --gray-150: #d5dbe1;
+    --gray-200: #c0c8d2;
+    --gray-300: #a3acba;
+    --gray-400: #87909f;
+    --gray-500: #687385;
+    --gray-600: #545969;
+    --gray-700: #414552;
+    --gray-800: #30313d;
+    --gray-900: #1a1b25;
+  
+    /* blue */
+    --blue-50: #ddfffe;
+    --blue-100: #cff5f6;
+    --blue-150: #a2e5ef;
+    --blue-200: #75d5e8;
+    --blue-300: #06b9ef;
+    --blue-400: #0096eb;
+    --blue-500: #0570de;
+    --blue-600: #0055bc;
+    --blue-700: #04438c;
+    --blue-800: #003262;
+    --blue-900: #011c3a;
+  
+    /* green */
+    --green-50: #ecfed7;
+    --green-100: #d7f7c2;
+    --green-150: #a6eb84;
+    --green-200: #76df47;
+    --green-300: #48c404;
+    --green-400: #3fa40d;
+    --green-500: #228403;
+    --green-600: #006908;
+    --green-700: #0b5019;
+    --green-800: #043b15;
+    --green-900: #02220d;
+  
+    /* orange */
+    --orange-50: #fef9da;
+    --orange-100: #fcedb9;
+    --orange-150: #fcd579;
+    --orange-200: #fcbd3a;
+    --orange-300: #ff8f0e;
+    --orange-400: #ed6704;
+    --orange-500: #c84801;
+    --orange-600: #a82c00;
+    --orange-700: #842106;
+    --orange-800: #5f1a05;
+    --orange-900: #331302;
+  
+    /* red */
+    --red-50: #fff5fa;
+    --red-100: #ffe7f2;
+    --red-150: #ffccdf;
+    --red-200: #ffb1cd;
+    --red-300: #fe87a1;
+    --red-400: #fc526a;
+    --red-500: #df1b41;
+    --red-600: #b3093c;
+    --red-700: #890d37;
+    --red-800: #68052b;
+    --red-900: #3e021a;
+  
+    /* purple */
+    --purple-50: #f9f7ff;
+    --purple-100: #f2ebff;
+    --purple-150: #dfd3fc;
+    --purple-200: #d1befe;
+    --purple-300: #b49cfc;
+    --purple-400: #8d7ffa;
+    --purple-500: #625afa;
+    --purple-600: #513dd9;
+    --purple-700: #3f32a1;
+    --purple-800: #302476;
+    --purple-900: #14134e;
+
+  --background-color-main: var(--orange-100);
+  --background-color-sidebar: var(--orange-50);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, Verdana,
+    Arial,
+    Helvetica,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color-main);
+  font-size: 1rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  color: black;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(to right, var(--background-color-sidebar) 95%, var(--background-color-main));
+  float: left;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.sidebar__header {
+  height: 14rem;
+  background-color: var(--orange-150);
+}
+
+.sidebar__content {
+  padding: 0 1.25rem 0 0.75rem;
+  color: #444;
+}
+
+.profile {
+  margin-top: -3.5rem;
+}
+
+.profile__avatar {
+  display: block;
+  position: relative;
+  width: 14rem;
+  height: 14rem;
+  margin: 0 1rem 2rem;
+  border: 2px solid #fff;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
+  border-radius:  50%;
+  object-fit: cover;
+}
+
+.profile__avatar:hover {
+  border: 2px solid var(--orange-150)
+}
+
+.profile__header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.profile__name {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile__profession {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #665;
+}
+
+.profile__contacts {
+  text-align: center;
+}
+
+.cv {
+  margin-top: 2.5rem
+}
+
+.cv__caption {    
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cv__links {
+
+}
+
+.cv__info {
+  padding: 1.2rem 0.2rem 1.2rem 0;
+  margin: 1.2rem 0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin: 0 0.5rem;
+}
+
+.social__item::marker {
+  color: transparent;
+}
+
+.social__svg-32px {
+  height: 32px;
+  width: 32px;
+}
+
+.social__svg-48px {
+  height: 48px;
+  width: 48px;
 }
