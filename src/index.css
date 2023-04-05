@@ -108,6 +108,10 @@ img {
   vertical-align: middle;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .sidebar {
   width: 300px;
   height: 100vh;
@@ -120,8 +124,11 @@ img {
 }
 
 .sidebar__header {
-  height: 14rem;
-  background-color: var(--orange-150);
+  height: 12.5rem;
+  background-image: linear-gradient(to right, #fff0 95%, var(--background-color-main)),
+                    url("./assets/images/sidebar-header.jpg");
+  background-position: left;  
+  background-repeat: no-repeat;
 }
 
 .sidebar__content {
@@ -130,7 +137,7 @@ img {
 }
 
 .profile {
-  margin-top: -3.5rem;
+  margin-top: -3.25rem;
 }
 
 .profile__avatar {
@@ -179,13 +186,10 @@ img {
   margin-bottom: 1.5rem;
 }
 
-.cv__links {
-
-}
-
 .cv__info {
   padding: 1.2rem 0.2rem 1.2rem 0;
   margin: 1.2rem 0;
+  text-align: justify;
 }
 
 .social {
@@ -196,10 +200,6 @@ img {
 
 .social__item {
   margin: 0 0.5rem;
-}
-
-.social__item::marker {
-  color: transparent;
 }
 
 .social__svg-32px {

@@ -22,9 +22,7 @@ const Sidebar = () => {
           </div>
           <div className="cv">
             <div className="cv__caption">Моё резюме</div>
-            <div className="cv__links">
-              <CV />
-            </div>
+            <CV />
             <div className="cv__info">
               Более 17 лет опыта разработки ПО и исследовательской деятельности.
             </div>
