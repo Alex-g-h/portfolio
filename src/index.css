@@ -79,8 +79,8 @@
     --purple-800: #302476;
     --purple-900: #14134e;
 
-  --background-color-main: var(--orange-100);
-  --background-color-sidebar: var(--orange-50);
+  --background-color-main: var(--blue-100);
+  --background-color-sidebar: var(--blue-50);
 }
 
 body {
@@ -121,6 +121,7 @@ img {
   left: 0;
   position: fixed;
   z-index: 1000;
+  overflow: auto;
 }
 
 .sidebar__header {
