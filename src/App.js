@@ -1,6 +1,6 @@
 import React from "react";
-import Projects from "./app/ui/Projects";
-import Sidebar from "./app/ui/Sidebar";
+import Projects from "./app/components/ui/Projects";
+import Sidebar from "./app/components/ui/Sidebar";
 
 function App() {
   return (

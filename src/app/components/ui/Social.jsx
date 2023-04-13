@@ -1,8 +1,8 @@
 import React from "react";
-import { ReactComponent as GitHub } from "../../assets/images/social/github.svg";
-import { ReactComponent as LinkedIn } from "../../assets/images/social/linkedin.svg";
-import { ReactComponent as Telegram } from "../../assets/images/social/telegram.svg";
-import { ReactComponent as Discord } from "../../assets/images/social/discord.svg";
+import { ReactComponent as GitHub } from "../../../assets/images/social/github.svg";
+import { ReactComponent as LinkedIn } from "../../../assets/images/social/linkedin.svg";
+import { ReactComponent as Telegram } from "../../../assets/images/social/telegram.svg";
+import { ReactComponent as Discord } from "../../../assets/images/social/discord.svg";
 
 const Social = () => {
   return (

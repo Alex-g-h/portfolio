@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as HeadHunter } from "../../assets/images/social/hh.svg";
-import { ReactComponent as Pdf } from "../../assets/images/social/pdf.svg";
+import { ReactComponent as HeadHunter } from "../../../assets/images/social/hh.svg";
+import { ReactComponent as Pdf } from "../../../assets/images/social/pdf.svg";
 
 const CV = () => {
   return (
@@ -15,7 +15,7 @@ const CV = () => {
       </div>
       <div className="social__item">
         <a
-          href="https://drive.google.com/file/d/1xSEK5PNdg0yvVz663NkrAsyI1C1QuvAh/view"
+          href="https://drive.google.com/file/d/1AW3cIFhPrAAy23b03YqEoStOhPvumkMI/view"
           target="blank"
         >
           <Pdf className="social__svg-48px" />
