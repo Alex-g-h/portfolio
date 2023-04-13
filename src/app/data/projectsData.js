@@ -33,13 +33,12 @@ export const ProjectsData = [
     description:
       "Демо Full Stack SPA приложение знакомств на стеке MERN. Имеется авторизация, личная страница с характеристиками. Зарегистрированные пользователи могут увидеть анкеты всех прочих пользователей, зарегистрировавшихся ранее, а также оставить комментарии на страницах других пользователей. Поддерживается функционал редактирования созданных учётных данных. Страница с пользователями поддерживает сортировку по имеющимся полям (столбцам) и фильтрацию по профессиям (отдельное меню слева).",
     imgUrls: [
-      "assets/images/projects/prj1/ph1.jpg",
-      "assets/images/projects/prj1/ph2.jpg",
-      "assets/images/projects/prj1/ph3.jpg",
-      "assets/images/projects/prj1/ph4.jpg",
-      "assets/images/projects/prj1/ph5.jpg",
-      "assets/images/projects/prj1/ph6.jpg",
-      "assets/images/projects/prj1/ph7.jpg",
+      "assets/images/projects/fast-company/fc1.png",
+      "assets/images/projects/fast-company/fc2.png",
+      "assets/images/projects/fast-company/fc3.png",
+      "assets/images/projects/fast-company/fc4.png",
+      "assets/images/projects/fast-company/fc5.png",
+      "assets/images/projects/fast-company/fc6.png",
     ],
     tags: [
       "React",
