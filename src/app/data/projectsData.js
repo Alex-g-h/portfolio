@@ -5,13 +5,11 @@ export const ProjectsData = [
     description:
       "Демо Full Stack SPA приложение учета доходов и расходов на стеке MERN. Имеется авторизация, набор банковских счетов для большинства платежных систем, связанная с ними таблица доходов и таблица трат. Раздел аналитики доходов и расходов с графиками и статистикой.",
     imgUrls: [
-      "assets/images/projects/prj1/ph1.jpg",
-      "assets/images/projects/prj1/ph2.jpg",
-      "assets/images/projects/prj1/ph3.jpg",
-      "assets/images/projects/prj1/ph4.jpg",
-      "assets/images/projects/prj1/ph5.jpg",
-      "assets/images/projects/prj1/ph6.jpg",
-      "assets/images/projects/prj1/ph7.jpg",
+      "assets/images/projects/gains-vs-spending/gs1.png",
+      "assets/images/projects/gains-vs-spending/gs2.png",
+      "assets/images/projects/gains-vs-spending/gs3.png",
+      "assets/images/projects/gains-vs-spending/gs4.png",
+      "assets/images/projects/gains-vs-spending/gs5.png",
     ],
     tags: [
       "React",
