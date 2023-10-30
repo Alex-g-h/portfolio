@@ -20,6 +20,7 @@ const ProjectSlider = ({
     speed: 500,
     autoplaySpeed: 4000,
     pauseOnHover: true,
+    adaptiveHeight: true,
   };
 
   return (
@@ -28,12 +29,14 @@ const ProjectSlider = ({
       <div className="project__slider">
         <Slider {...settings}>
           {imgUrls.map((imgUrl, i) => (
-            <img
-              key={i}
-              className="slider__item"
-              src={require(`/src/${imgUrl}`)}
-              alt=""
-            />
+            <div className="slider__wrapper">
+              <img
+                key={i}
+                className="slider__item"
+                src={require(`/src/${imgUrl}`)}
+                alt=""
+              />
+            </div>
           ))}
         </Slider>
       </div>

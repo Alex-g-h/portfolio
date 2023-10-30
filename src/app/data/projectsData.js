@@ -53,4 +53,20 @@ export const ProjectsData = [
     repository: "https://github.com/Alex-g-h/fast-company",
     url: "https://alex-g-h.github.io/fast-company/",
   },
+  {
+    id: 3,
+    name: "Metal Company",
+    description: "Landing page компании металлопроката.",
+    imgUrls: [
+      "assets/images/projects/alex-metal/am1.png",
+      "assets/images/projects/alex-metal/am2.png",
+      "assets/images/projects/alex-metal/am3.png",
+      "assets/images/projects/alex-metal/am4.png",
+      "assets/images/projects/alex-metal/am5.png",
+      "assets/images/projects/alex-metal/am6.png",
+    ],
+    tags: ["React", "CSS"],
+    repository: "https://github.com/Alex-g-h/alex-metal",
+    url: "https://github.com/Alex-g-h/alex-metal",
+  },
 ];
