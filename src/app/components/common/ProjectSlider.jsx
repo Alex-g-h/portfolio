@@ -1,27 +1,33 @@
-import React from "react";
-import Slider from "react-slick";
+import React from 'react'
+import Slider from 'react-slick'
+import { ReactComponent as GooglePlay } from '../../../assets/images/social/googleplay.svg'
+import { ReactComponent as AppStore } from '../../../assets/images/social/appstore.svg'
 
 const ProjectSlider = ({
   id,
   name,
   description,
+  link,
   imgUrls,
   tags,
   repository,
   url,
+  googlePlay,
+  appStore,
 }) => {
   const settings = {
     dots: false,
     infinite: true,
-    fade: true,
+    // fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 4000,
     pauseOnHover: true,
+    swipeToSlide: true,
     adaptiveHeight: true,
-  };
+  }
 
   return (
     <>
@@ -43,6 +49,16 @@ const ProjectSlider = ({
       <div className="project__description">
         <p>{description}</p>
       </div>
+      {link && (
+        <div className="project__link">
+          <a
+            href={link?.href}
+            target="blank"
+          >
+            {link?.text}
+          </a>
+        </div>
+      )}
       <div className="project__footer">
         <div className="project__tags">
           <div className="tags">
@@ -75,10 +91,30 @@ const ProjectSlider = ({
               Ссылка
             </a>
           )}
+          {googlePlay && (
+            <div className="social__item">
+              <a
+                href={googlePlay}
+                target="blank"
+              >
+                <GooglePlay className="social__svg-mobile-48px" />
+              </a>
+            </div>
+          )}
+          {appStore && (
+            <div className="social__item">
+              <a
+                href={appStore}
+                target="blank"
+              >
+                <AppStore className="social__svg-mobile-48px" />
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ProjectSlider;
+export default ProjectSlider

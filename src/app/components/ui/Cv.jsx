@@ -1,6 +1,6 @@
-import React from "react";
-import { ReactComponent as HeadHunter } from "../../../assets/images/social/hh.svg";
-import { ReactComponent as Pdf } from "../../../assets/images/social/pdf.svg";
+import React from 'react'
+import { ReactComponent as HeadHunter } from '../../../assets/images/social/hh.svg'
+import { ReactComponent as Pdf } from '../../../assets/images/social/pdf.svg'
 
 const CV = () => {
   return (
@@ -15,14 +15,14 @@ const CV = () => {
       </div>
       <div className="social__item">
         <a
-          href="https://drive.google.com/file/d/1AW3cIFhPrAAy23b03YqEoStOhPvumkMI/view"
+          href="https://drive.google.com/file/d/1dlNUgHcL5PnX1IxApjg7puXdFbDEKYSd/view"
           target="blank"
         >
           <Pdf className="social__svg-48px" />
         </a>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CV;
+export default CV
