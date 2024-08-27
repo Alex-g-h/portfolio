@@ -36,7 +36,7 @@ export const ProjectsData = [
     ],
     googlePlay:
       'https://play.google.com/store/apps/details?id=com.arcomdigital.qr_code_scan',
-    appStore: 'https://apps.apple.com/us/app/quiverqc/id123',
+    appStore: 'https://apps.apple.com/us/app/quiver-qc/id6648794270',
   },
   {
     id: 2,

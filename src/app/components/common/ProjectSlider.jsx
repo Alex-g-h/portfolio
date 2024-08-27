@@ -25,7 +25,7 @@ const ProjectSlider = ({
     speed: 500,
     autoplaySpeed: 4000,
     pauseOnHover: true,
-    swipeToSlide: true,
+    // swipeToSlide: true,
     adaptiveHeight: true,
   }
 
