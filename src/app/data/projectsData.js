@@ -42,7 +42,7 @@ export const ProjectsData = [
     id: 2,
     name: 'Blackbird',
     description:
-      'Продукт представляющий собой плату Blackbird и Raspberry Pi, соединенные между собою. На плате имеется микроконтроллер (MCU) и ПЛИС (FPGA). MCU взаимодействует с Raspberry Pi через протокол SPI и GPIO. На Raspberry Pi развернуто WEB приложение и WEB сервер. Решение позволяет обнаруживать утечки сигнала в разных частотных диапазонах (Aero, High) при разных типах модуляции/режимах (OFDM, Pilot/QAM, OFDM Upstream Data Profile (OUDP), Full duplex (FDX)). Решение также позволяет анализировать спектры. С помощью WEB приложения можно обновлять прошивки для MCU, FPGA.',
+      'Продукт представляющий собой плату Blackbird и Raspberry Pi, соединенные между собою. На плате имеется микроконтроллер (MCU) и ПЛИС (FPGA). MCU взаимодействует с Raspberry Pi через протокол SPI и GPIO. На Raspberry Pi развернуто Full Stack SPA приложение. Решение позволяет обнаруживать утечки сигнала в разных частотных диапазонах (Aero, High) при разных типах модуляции/режимах (OFDM, Pilot/QAM, OFDM Upstream Data Profile (OUDP), Full duplex (FDX)). Решение также позволяет анализировать спектры. С помощью WEB приложения можно обновлять прошивки для MCU, FPGA.',
     link: {
       href: 'https://drive.google.com/file/d/1CYzwp5c-qjPH1gME3VPmjfwBthW9X0g6/view',
       text: 'Демо видео',
