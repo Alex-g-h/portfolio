@@ -1,6 +1,6 @@
-import React from "react";
-import Social from "./Social";
-import CV from "./Cv";
+import React from 'react'
+import Social from './Social'
+import CV from './Cv'
 
 const Sidebar = () => {
   return (
@@ -10,12 +10,12 @@ const Sidebar = () => {
         <div className="profile">
           <img
             className="profile__avatar"
-            src={require("../../../assets/images/profile_photo.jpg")}
+            src={require('../../../assets/images/profile_photo.jpg')}
             alt=""
           />
           <div className="profile__header">
             <div className="profile__name">Булыгин Алексей</div>
-            <div className="profile__profession">Frontend developer</div>
+            <div className="profile__profession">WEB, mobile developer</div>
           </div>
           <div className="profile__contacts">
             <Social />
@@ -30,7 +30,7 @@ const Sidebar = () => {
         </div>
       </div>
     </aside>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
