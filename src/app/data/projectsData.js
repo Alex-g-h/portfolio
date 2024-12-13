@@ -140,6 +140,6 @@ export const ProjectsData = [
     ],
     tags: ['React', 'CSS'],
     repository: 'https://github.com/Alex-g-h/alex-metal',
-    url: 'https://github.com/Alex-g-h/alex-metal',
+    url: 'https://steelvrn.ru',
   },
 ]
