@@ -15,7 +15,7 @@ const CV = () => {
       </div>
       <div className="social__item">
         <a
-          href="https://drive.google.com/file/d/1K_EYXcumBzZUxDIjKm6eSRykgR2yrNNg"
+          href="https://drive.google.com/file/d/1p2lEczwwQZeINeVZF3eDMur9kAHIxpMo/view"
           target="blank"
         >
           <Pdf className="social__svg-48px" />
