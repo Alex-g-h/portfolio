@@ -35,9 +35,11 @@ const ProjectSlider = ({
       <div className="project__slider">
         <Slider {...settings}>
           {imgUrls.map((imgUrl, i) => (
-            <div className="slider__wrapper">
+            <div
+              className="slider__wrapper"
+              key={i}
+            >
               <img
-                key={i}
                 className="slider__item"
                 src={require(`/src/${imgUrl}`)}
                 alt=""

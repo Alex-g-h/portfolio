@@ -1,6 +1,6 @@
-import React from "react";
-import { ProjectsData } from "../../data/projectsData";
-import ProjectSlider from "../common/ProjectSlider";
+import React from 'react'
+import { ProjectsData } from '../../data/projectsData'
+import ProjectSlider from '../common/ProjectSlider'
 
 const Projects = () => {
   return (
@@ -17,7 +17,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
