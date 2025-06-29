@@ -171,7 +171,6 @@ export const ProjectsData = [
       'assets/images/projects/alex-metal/am6.png',
     ],
     tags: ['React', 'CSS'],
-    repository: 'https://github.com/Alex-g-h/alex-metal',
     url: 'https://steelvrn.ru',
   },
 ]
