@@ -4,10 +4,10 @@ export const ProjectsData = [
     name: 'Snoop mini',
     description:
       'Snoop mini — мобильное приложение компаньон, предназначенное для работы с устройством обнаружения утечек сигналов Arcom Digital Snoop Mini. Приложение позволяет конфигурировать и управлять процессом обнаружения утечек сигналов в кабельной сети. Взаимодействие между устройвами происходит по Bluetooth протоколу BLE. С помощью приложения можно отправлять отчеты о работе в отдел контроля качества.',
-    link: {
+    demos: [{
       href: 'https://drive.google.com/drive/folders/1Gr3VRhrHNm57GsXdrV4UORxo9RsdN00y',
       text: 'Видео применения',
-    },
+    }],
     imgUrls: [
       'assets/images/projects/snoop-mini/sm1.jpg',
       'assets/images/projects/snoop-mini/sm2.jpg',
@@ -36,10 +36,10 @@ export const ProjectsData = [
     name: 'Quiver QC',
     description:
       'Quiver QC — мобильное приложение, которое позволяет реализовать метрику контроля качества (QC) при использовании полевого измерителя Arcom Digital Quiver. Приложение предоставляет простой способ загрузки сохраненных снимков экрана Quiver, документирующих условия до и после ремонта для различных неисправностей. Приложение обращается к камере мобильного телефона, сканирует QR-код, отображаемый на экране Quiver, представляющий снимок экрана Quiver, преобразует захваченный QR-код обратно в снимок экрана, а затем загружает снимки экрана на сервер Cloud QC вместе с координатами и метаданными для анализа и использования менеджерами. При отсутствии связи отправку результатов можно отложить.',
-    link: {
+    demos: [{
       href: 'https://drive.google.com/drive/folders/11lUQA3akNYfsfZAaTqjrCzaXKGcXMkry',
       text: 'Тестовый доступ',
-    },
+    }],
     imgUrls: [
       'assets/images/projects/quiver-qc/qq1.jpg',
       'assets/images/projects/quiver-qc/qq2.jpg',
@@ -75,10 +75,10 @@ export const ProjectsData = [
     name: 'Blackbird',
     description:
       'Продукт представляющий собой плату Blackbird и Raspberry Pi, соединенные между собою. На плате имеется микроконтроллер (MCU) и ПЛИС (FPGA). MCU взаимодействует с Raspberry Pi через протокол SPI и GPIO. На Raspberry Pi развернуто Full Stack SPA приложение. Решение позволяет обнаруживать утечки сигнала в разных частотных диапазонах (Aero, High) при разных типах модуляции/режимах (OFDM, Pilot/QAM, OFDM Upstream Data Profile (OUDP), Full duplex (FDX)). Решение также позволяет анализировать спектры. С помощью WEB приложения можно обновлять прошивки для MCU, FPGA.',
-    link: {
+    demos: [{
       href: 'https://drive.google.com/file/d/1CYzwp5c-qjPH1gME3VPmjfwBthW9X0g6/view',
       text: 'Демо видео',
-    },
+    }],
     imgUrls: [
       'assets/images/projects/blackbird/bb1.png',
       'assets/images/projects/blackbird/bb2.png',

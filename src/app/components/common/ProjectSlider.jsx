@@ -1,13 +1,13 @@
-import React from 'react'
-import Slider from 'react-slick'
-import { ReactComponent as GooglePlay } from '../../../assets/images/social/googleplay.svg'
-import { ReactComponent as AppStore } from '../../../assets/images/social/appstore.svg'
+import React from "react";
+import Slider from "react-slick";
+import { ReactComponent as GooglePlay } from "../../../assets/images/social/googleplay.svg";
+import { ReactComponent as AppStore } from "../../../assets/images/social/appstore.svg";
 
 const ProjectSlider = ({
   id,
   name,
   description,
-  link,
+  demos,
   imgUrls,
   tags,
   repository,
@@ -27,7 +27,7 @@ const ProjectSlider = ({
     pauseOnHover: true,
     swipeToSlide: true,
     adaptiveHeight: true,
-  }
+  };
 
   return (
     <>
@@ -35,10 +35,7 @@ const ProjectSlider = ({
       <div className="project__slider">
         <Slider {...settings}>
           {imgUrls.map((imgUrl, i) => (
-            <div
-              className="slider__wrapper"
-              key={i}
-            >
+            <div className="slider__wrapper" key={i}>
               <img
                 className="slider__item"
                 src={require(`/src/${imgUrl}`)}
@@ -51,24 +48,20 @@ const ProjectSlider = ({
       <div className="project__description">
         <p>{description}</p>
       </div>
-      {link && (
-        <div className="project__link">
-          <a
-            href={link?.href}
-            target="blank"
-          >
-            {link?.text}
-          </a>
+      {demos && (
+        <div className="project__demos">
+          {demos.map((d, i) => (
+            <a key={i} href={d?.href} target="blank">
+              {d?.text}
+            </a>
+          ))}
         </div>
       )}
       <div className="project__footer">
         <div className="project__tags">
           <div className="tags">
             {tags.map((t, i) => (
-              <div
-                key={i}
-                className="tags__item"
-              >
+              <div key={i} className="tags__item">
                 {t}
               </div>
             ))}
@@ -95,20 +88,14 @@ const ProjectSlider = ({
           )}
           {googlePlay && (
             <div className="social__item">
-              <a
-                href={googlePlay}
-                target="blank"
-              >
+              <a href={googlePlay} target="blank">
                 <GooglePlay className="social__svg-mobile-48px" />
               </a>
             </div>
           )}
           {appStore && (
             <div className="social__item">
-              <a
-                href={appStore}
-                target="blank"
-              >
+              <a href={appStore} target="blank">
                 <AppStore className="social__svg-mobile-48px" />
               </a>
             </div>
@@ -116,7 +103,7 @@ const ProjectSlider = ({
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ProjectSlider
+export default ProjectSlider;
